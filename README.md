@@ -39,6 +39,7 @@ git pull
 ```
 ## Installation
 Go to the path when you are downloaded the code and install
+Don't forget to configure your .env file
 ```bash
 composer install
 
@@ -50,6 +51,16 @@ php artisan migrate
 
 php artisan serve
 ```
+
+
 ## Usage
 
 Go to the browser and access http://127.0.0.1:8000/
+
+## Test
+Using Laravel Dusk to tests
+
+
+```bash
+php artisan dusk
+```

@@ -53,7 +53,7 @@
     <textarea name="comment_text" id="comment_text" class="form-control" cols="30" rows="5" v-model="comment_text"></textarea>
 
 </div>
-<button type="submit" class="btn btn-primary mt-2">Submit</button>
+<button name="submit" id="submit" type="submit" class="btn btn-primary mt-2 submit">Submit</button>
 </form>
 
 </div>

@@ -41864,7 +41864,10 @@ var render = function () {
         _vm._v(" "),
         _c(
           "button",
-          { staticClass: "btn btn-primary mt-2", attrs: { type: "submit" } },
+          {
+            staticClass: "btn btn-primary mt-2 submit",
+            attrs: { name: "submit", id: "submit", type: "submit" },
+          },
           [_vm._v("Submit")]
         ),
       ]
