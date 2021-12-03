@@ -24,7 +24,7 @@ class PostController extends Controller
     public function getComments($post_id) {
         $comments = Comment::with('replies.replies')->where('post_id',$post_id)
         ->where('comment_replied_id',null)
-        ->orderBy('created_at')
+        ->orderBy('created_at','desc')
         ->get();
         return response()->json($comments, 200);
     }
