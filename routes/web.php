@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/posts/{id}/comments', 'PostController@getComments');
+Route::post('/posts/{id}/comments', 'PostController@createComment');
